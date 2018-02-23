@@ -232,7 +232,7 @@ public class RingProgressBar extends View {
     }
 
     //测量高度
-    if (heightMode == MeasureSpec.AT_MOST) {
+    if (heightMode == MeasureSpec.AT_MOST || heightMode == MeasureSpec.UNSPECIFIED) {
       height = result;
     } else {
       height = heightSize;
